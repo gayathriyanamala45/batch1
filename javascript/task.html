@@ -1,104 +1,129 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
-  <head>
-    <title>Employee Registration
-</title>
-  </head>
+<head>
+    <title>Employee Registration</title>
+</head>
 <body>
-  <script1 src="./script.js">
+
+<script>
+
+// Employee Details
 const employeeName = "Gayathri";
+const employeeAge=23;
 let employeeId = "EMP001";
 let department = "FULL STACK";
 let salary = 50000;
 let isPermanent = true;
+
 console.log("Employee Details");
 console.log("----------------");
-console.log("Haritha:", employeeName);
-console.log("EMP002:", employeeId);
-console.log("Python:", department);
-console.log("20000:", salary);
-console.log("true:", isPermanent);
+console.log("Employee Name :", employeeName);
+console.log("Employee ID   :", employeeId);
+console.log("Department    :", department);
+console.log("Salary        :", salary);
+console.log("Permanent     :", isPermanent);
+
 // Employee Skills
 let skills = ["HTML", "CSS", "JavaScript", "React", "Git", "Node.js"];
+
 console.log("\nEmployee Skills");
-console.log("First Skill :", skills[0]);
-console.log("Third Skill :", skills[2]);
-console.log("Last Skill  :", skills[skills.length - 1]);
-console.log("Total Skills:", skills.length);
-//  Company Object
+console.log("First Skill   :", skills[0]);
+console.log("Third Skill   :", skills[2]);
+console.log("Last Skill    :", skills[skills.length - 1]);
+console.log("Total Skills  :", skills.length);
+
+// Company Object
 let company = {
-  companyName: "Tech Solutions",
-   location: "Chennai",
-  employees: 500,
-  technologies: ["HTML", "CSS", "JavaScript", "React"]
+    companyName: "Tech Solutions",
+    location: "Chennai",
+    employees: 500,
+    technologies: ["HTML", "CSS", "JavaScript", "React"]
 };
+
 console.log("\nCompany Details");
-console.log("Stackly:", company.companyName);
-console.log("Banglore:", company.location);
-console.log("CSS","Java","HTML":, company.technologies[1]);
-console.log(3, company.technologies.length);
+console.log("Company Name  :", company.companyName);
+console.log("Location      :", company.location);
+console.log("Employees     :", company.employees);
+console.log("Technology    :", company.technologies[1]);
+console.log("Total Technologies :", company.technologies.length);
+
 // Salary Calculator
 let basicSalary = 30000;
 let bonus = 5000;
 let totalSalary = basicSalary + bonus;
 let tax = totalSalary * 0.10;
 let finalSalary = totalSalary - tax;
+
 console.log("\nSalary Calculator");
-console.log( 20000, basicSalary);
-console.log(3000, bonus);
-console.log(23000, totalSalary);
-console.log("Tax (10%)    :", tax);
-console.log("Final Salary :", finalSalary);
-//  Attendance Checker
+console.log("Basic Salary  :", basicSalary);
+console.log("Bonus         :", bonus);
+console.log("Total Salary  :", totalSalary);
+console.log("Tax (10%)     :", tax);
+console.log("Final Salary  :", finalSalary);
+
+// Attendance Checker
 let attendance = 92;
-let result =
-attendance >= 75 ? "Eligible for Exam" : "Not Eligible";
+let result = attendance >= 75 ? "Eligible for Exam" : "Not Eligible";
+
 console.log("\nAttendance Status");
 console.log(result);
-//  Login Verification
+
+// Login Verification
 let username = "admin";
 let password = "12345";
-if (username === "admin" && password === "12345") { console.log("\nLogin Successful");
-} else { console.log("\nInvalid Credentials");
+
+if (username === "admin" && password === "12345") {
+    console.log("\nLogin Successful");
+} else {
+    console.log("\nInvalid Credentials");
 }
+
 // Product Billing
 let productName = "Laptop";
 let productPrice = 45000;
 let quantity = 2;
 let totalBill = productPrice * quantity;
+
 console.log("\nProduct Billing");
-console.log("Laptop:", productName);
-console.log("30000   :", productPrice);
-console.log( 2, quantity);
-console.log(" productPrice * quantity:", totalBill);
-//  Increment & Decrement
+console.log("Product Name  :", productName);
+console.log("Product Price :", productPrice);
+console.log("Quantity      :", quantity);
+console.log("Total Bill    :", totalBill);
+
+// Increment & Decrement
 let visitors = 100;
+
 console.log("\nIncrement & Decrement");
-console.log("Initial Value :", visitors);
-console.log("Pre Increment :", ++visitors); // 101
-console.log("Post Increment:", visitors++); // 101
-console.log("After Post Increment:", visitors); // 102
-console.log("Pre Decrement :", --visitors); // 101
-console.log("Post Decrement:", visitors--); // 101
-console.log("After Post Decrement:", visitors); // 100
+console.log("Initial Value         :", visitors);
+console.log("Pre Increment         :", ++visitors);
+console.log("Post Increment        :", visitors++);
+console.log("After Post Increment  :", visitors);
+console.log("Pre Decrement         :", --visitors);
+console.log("Post Decrement        :", visitors--);
+console.log("After Post Decrement  :", visitors);
+
 // Comparison Checker
 console.log("\nComparison Checker");
-console.log(10 == "10");     // true
-console.log(10 === "10");    // false
-console.log(20 != "20");     // false
-console.log(20 !== "20");    // true
-console.log(5 < 10);         // true
-console.log(15 >= 20);       // false
-console.log(100 <= 100);     // true
-// Task 10: User Interaction
-let empName = prompt("Enter Employee Name:");
-let empAge = prompt("Enter Employee Age:");
+console.log(10 == "10");      // true
+console.log(10 === "10");     // false
+console.log(20 != "20");      // false
+console.log(20 !== "20");     // true
+console.log(5 < 10);          // true
+console.log(15 >= 20);        // false
+console.log(100 <= 100);      // true
+
+// User Interaction
+let empName = prompt("Gayathri:");
+let empAge = prompt(23);
 let joinCompany = confirm("Do you want to join our company?");
+
 if (joinCompany) {
-   alert("Welcome " + empName);
+    alert("Welcome " + empName + " (Age: " + empAge + ")");
 } else {
-   alert("Thank You");
+    alert("Thank You");
 }
-</script
+
+</script>
+
 </body>
 </html>
