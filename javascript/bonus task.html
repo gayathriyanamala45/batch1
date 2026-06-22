@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>ATM System</title>
+    </head>
+    <body>
+        <h1>ATM System</h1>
+        <sript>
+            alert("Welcome to ATM");
+            const account={
+                name:"Gayathri",
+                accountNumer:"1234567890",
+                pin:1234,
+                balance:10000
+            };
+            let enteredpin=Number(prompt("Enter ATM PIN"));
+            let access=enteredpin===account.pin
+            ?"Access Granted"
+            :"Access Denied";
+            alert(access);
+            let withdrawAmount=Number(prompt("Enter withdraw Amount"));
+            let remainingBalance=account.balance-withdrawAmount;
+            console.log("Account Holder:",account.name);
+            console.log("Account Number:",account.accounteanumber);
+            console.log("Balance:",account.balance);
+            console.log("Withdraw Ammount:",withdrawAmmount);
+            console.log("Remaining Balance:",remainingBalance);
+            document.write('
+                <h2>ATM Receipt</h2>
+                <p>Name:${account.name}</p>
+                <p>Account Number:${account.accountNumber}</p>
+                <p>Balance:${account.balance}</p>
+                <p>Withdraw Amount:${withdrawAmount}</p>');
+        </sript>
+    </body>
+</html>
