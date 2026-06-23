@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Employee Information System</title>
+    </head>
+    <body>
+        <h2>Employee Information System</h2>
+        <script>
+            let name=prompt("Eamployee Name:");
+            let age=prompt("Enter Employee Age:");
+            let department=prompt("Enter Department:")
+            let salary=Number(prompt("Enter Salary:"));
+            let employee={
+                name:name,
+                department:department,
+                salary:salary
+            };
+            document.write("<h3>Employee details</h3>");
+            document.write("Name:"+employee.name+"<br>");
+            document.write("Age:"+employee.age+"<br>");
+            document.write("Department:"+employee.department+"<br>");
+            document.write("salary:"+employee.salary+"<br><br>");
+            if(employee.salary>300000){
+                document.write("Eligible for Bonus");
+            }else{
+                document.write("Not eligible");
+            }
+            </script>
+    </body>
+</html>
