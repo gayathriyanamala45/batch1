@@ -1,0 +1,138 @@
+<html>
+<head>
+    <title>JavaScript Concepts Project</title>
+</head>
+<body>
+    <h1>Javascript Concepts Output</h1>
+    <script>
+        let employees=[
+            {name:"Gayathri",id:101,salary:30000},
+            {name:"Haritha",id:201,salary:20000},
+        ];
+        document.write("<h2>Employee Management</h2>");
+        for(let emp of employees){
+            document.write(emp.name+"-"+emp.salary+"<br>");
+            if(emp.salary>=50000){
+            document.write("Eligible For Bonus<br>");
+        }else{
+            document.write("Not Eligible For Bonus<br>");
+        }
+    }
+    let marks=[80,90,70];
+    let total=marks[0]+marks[1]+marks[2];
+    let percentage=total/3;
+    document.write("<h2>student Result</h2>");
+    document.write("Percentage:"+percentage+"<br>");
+    if(percentage>=90)
+    document.write("Grade A+<br>");
+else if(percentage>=80)
+document.write("Grade A<br>");
+else if(percentage>=70)
+document.write("Grade B<br>");
+else
+document.write("Fail<br>");
+let products=[
+    {name:"Laptop",price:50000},
+    {name:"Mouse",price:1000}
+];
+let bill=0;
+for(let p of product){
+    bill+=p.price;
+}
+if(bill>50000){
+    bill=bill-(bill*0.10);
+}
+document.write(<h2>E-Commerce Cart</h2>);
+        document.write("Final Bill: ₹" + bill + "<br>");
+        let username = "admin";
+        let password = "12345";
+
+        let login =
+            (username === "admin" && password === "12345")
+            ? "Login Success"
+            : "Invalid Credentials";
+
+        document.write("<h2>Login</h2>");
+        document.write(login + "<br>");
+
+        // Task 5 - Traffic Signal
+        let color = "Green";
+
+        document.write("<h2>Traffic Signal</h2>");
+
+        switch (color) {
+            case "Red":
+                document.write("Stop<br>");
+                break;
+            case "Yellow":
+                document.write("Ready<br>");
+                break;
+            case "Green":
+                document.write("Go<br>");
+                break;
+        }
+        let balance = 10000;
+        let withdraw = 3000;
+
+        document.write("<h2>ATM Withdrawal</h2>");
+
+        if (withdraw <= balance) {
+            document.write("Withdrawal Successful<br>");
+        } else {
+            document.write("Insufficient Balance<br>");
+        }
+        document.write("<h2>Online Food Order</h2>");
+
+        function foodOrder(callback) {
+            document.write("Order Received<br>");
+            callback();
+        }
+
+        function delivery() {
+            document.write("Food Preparing<br>");
+            document.write("Food Delivered<br>");
+        }
+
+        foodOrder(delivery);
+        document.write("<h2>Cashback Generator</h2>");
+
+        function* cashback() {
+            yield "10% Cashback";
+            yield "20% Cashback";
+            yield "50% Cashback";
+            yield "Better Luck Next Time";
+        }
+
+        let offer = cashback();
+
+        document.write(offer.next().value + "<br>");
+        document.write(offer.next().value + "<br>");
+        document.write(offer.next().value + "<br>");
+        document.write(offer.next().value + "<br>");
+        document.write("<h2>Hospital Patient Check</h2>");
+
+        let age = 25;
+        let weight = 60;
+
+        if (age > 18) {
+            if (weight > 50) {
+                document.write("Patient Eligible<br>");
+            } else {
+                document.write("Weight Not Eligible<br>");
+            }
+        } else {
+            document.write("Age Not Eligible<br>");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
